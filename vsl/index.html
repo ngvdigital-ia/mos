@@ -93,17 +93,23 @@
     width: 100%;
   }
 
-  /* Hide VTurb headline injected by player */
-  .smartplayer-headline,
-  [class*="headline"],
-  .video-container > div > div:not([id*="vid_"]):not([class*="smartplayer"]) {
-    display: none !important;
-  }
-
-  .smartplayer-wrapper,
+  /* Fix VTurb A/B test player layout */
   .smartplayer-mobile-container {
     max-width: 100% !important;
     width: 100% !important;
+  }
+
+  .smartplayer-headline {
+    display: none !important;
+  }
+
+  #smartplayer {
+    padding: 56.25% 0 0 !important;
+  }
+
+  /* Hide original vid_ placeholder since VTurb creates its own */
+  .video-container > div[id^="vid_"] {
+    display: none !important;
   }
 
   /* ===== SPOTS LEFT ===== */
