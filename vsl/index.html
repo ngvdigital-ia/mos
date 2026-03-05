@@ -93,6 +93,19 @@
     width: 100%;
   }
 
+  /* Hide VTurb headline injected by player */
+  .smartplayer-headline,
+  [class*="headline"],
+  .video-container > div > div:not([id*="vid_"]):not([class*="smartplayer"]) {
+    display: none !important;
+  }
+
+  .smartplayer-wrapper,
+  .smartplayer-mobile-container {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
   /* ===== SPOTS LEFT ===== */
   .vagas-bloco {
     display: none;
