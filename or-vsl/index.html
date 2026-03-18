@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orgasmic Rides</title>
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { width: 100%; min-height: 100vh; }
+    body {
+      background-color: #0a0000;
+      background-image:
+        radial-gradient(ellipse at 50% 0%, rgba(120, 0, 0, 0.35) 0%, transparent 60%),
+        radial-gradient(ellipse at 0% 0%, rgba(80, 0, 0, 0.25) 0%, transparent 50%),
+        radial-gradient(ellipse at 100% 0%, rgba(80, 0, 0, 0.25) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 100%, rgba(60, 0, 0, 0.15) 0%, transparent 50%);
+      background-attachment: fixed;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .video-container {
+      margin: 30px auto;
+      width: 100%;
+      max-width: 900px;
+      padding: 0 16px;
+    }
+
+    .video-wrapper {
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%;
+      position: relative;
+      background: #000;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .video-wrapper iframe,
+    .video-wrapper video,
+    .video-wrapper > div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+
+  <!-- Pixel UTMify -->
+  <script>
+    window.pixelId = "69baac7c0c0e7eb10fd451ef";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+    document.head.appendChild(a);
+  </script>
+</head>
+<body>
+
+  <div class="video-container">
+    <div class="video-wrapper">
+      <!-- VTurb player será inserido aqui quando o vídeo estiver pronto -->
+    </div>
+  </div>
+
+  <!-- UTMify -->
+  <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-subids async defer></script>
+</body>
+</html>
